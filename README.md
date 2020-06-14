@@ -9,4 +9,4 @@ All of the opponent's pieces between these two pieces are 'captured' and turned 
 [More Instructions](https://www.eothello.com)
 
 ### Game Play
-<img src="https://imgur.com/Uw9Eb7R" alt="screenshot of game" />
+<img src="https://i.imgur.com/Uw9Eb7R.png" alt="screenshot of game" />
