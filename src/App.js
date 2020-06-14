@@ -90,11 +90,15 @@ class Game extends Component {
                     <Popup trigger={<button className="button"> Directions </button>} modal>
                     {close => (
                     <div className="modal">
-                      <a className="close" onClick={close}>
+                      <div className="close" onClick={close}>
                         &times;
-                      </a>
+                      </div>
                       <div className="content">
-                        Each piece played must be laid adjacent to an opponent's piece so that the opponent's piece or a row of opponent's pieces is flanked by the new piece and another piece of the player's colour. All of the opponent's pieces between these two pieces are 'captured' and turned over to match the player's colour.
+                        Each piece played must be laid adjacent to an opponent's piece 
+                        so that the opponent's piece or a row of opponent's pieces is 
+                        flanked by the new piece and another piece of the player's colour. 
+                        All of the opponent's pieces between these two pieces are 'captured' and 
+                        turned over to match the player's colour.
                       </div>
                     </div>
                    )}
