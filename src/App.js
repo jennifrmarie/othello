@@ -25,31 +25,7 @@ class Game extends Component {
           ]
       }
   }
-  handleClick(i){
-      const history = this.state.history.slice(0, this.state.stepNumber + 1);
-      const current = history[history.length - 1];
-      const squares = current.squares.slice();
-      let possMoves = checkMove(squares,i,this.state.xIsNext,this.state.boardSize);
-      if(possMoves.length > 0){
-          makeMove(squares,i,this.state.xIsNext,possMoves,this.state.boardSize);
-          squares[i] = this.state.xIsNext ? 'X' : 'O';
-          let counts = countTiles(squares, this.state.boardSize);
-          this.setState({
-              history: history.concat({
-                  squares: squares
-          }),
-          xIsNext: !this.state.xIsNext,
-          stepNumber: history.length,
-          blackCount: counts[0],
-          whiteCount: counts[1]
-          
-          });
-      } else {
-          this.setState({
-              snackbaropen:true
-          })
-      }
-  }
+
 
   resetGame(){
       this.setState(new Game().state);
